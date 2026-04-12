@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about Waystone Clinical Psychology — appointments, referrals, Medicare, fees, and telehealth.">
+  <title>FAQ — Waystone Clinical Psychology</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-header-placeholder"></div>
+
+  <main>
+
+    <!-- ── Page Header ── -->
+    <section class="page-header">
+      <div class="container">
+        <p class="page-header__label">Common questions</p>
+        <h1>Frequently Asked Questions</h1>
+      </div>
+    </section>
+
+    <!-- ── FAQ Accordion ── -->
+    <section class="section">
+      <div class="container">
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              How do I make an appointment?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-1" role="region">
+              <p>To enquire about an appointment, please complete the contact form on this website. Katy will be in touch to discuss your needs, answer any questions, and help you get started.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              Do I need a referral?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-2" role="region">
+              <p>No — you are welcome to self-refer at any time. However, a Mental Health Treatment Plan from your GP is required to access Medicare rebates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              What is a Mental Health Treatment Plan and how do I get one?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-3" role="region">
+              <p>A Mental Health Treatment Plan (MHTP) is a document prepared by your GP that recommends psychological treatment. It entitles eligible clients to a rebate on up to 10 individual psychology sessions per calendar year. Book a longer appointment with your GP, let them know you would like a referral to see a psychologist, and they will prepare the plan if appropriate.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              What do I need for a telehealth appointment?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-4" role="region">
+              <p>You will need a stable internet connection, a private and quiet space, and a device with a camera and microphone. A headset is optional but helpful.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              Do you offer in person appointments?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-5" role="region">
+              <p>Waystone Clinical Psychology is currently a telehealth only practice. In person appointments are not available at this time.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+              What payment methods do you accept?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-9" role="region">
+              <p>Sessions can be paid by credit card or bank transfer. Payment is required at the time of your appointment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-10">
+              Do you offer NDIS, WorkCover, DVA or TAC funded sessions?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-10" role="region">
+              <p>Waystone Clinical Psychology is not currently registered to provide services under NDIS, WorkCover, DVA, or TAC funding.</p>
+            </div>
+          </div>
+
+        </div><!-- /.faq-list -->
+
+        <div style="text-align:center;margin-top:3.5rem;">
+          <p style="color:var(--cream-dim);font-size:0.93rem;margin-bottom:1.5rem;">Still have questions? Katy is happy to help.</p>
+          <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-placeholder"></div>
+
+  <script src="nav.js"></script>
+  <script>
+    /* FAQ accordion */
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        const answerId = this.getAttribute('aria-controls');
+        const answer   = document.getElementById(answerId);
+
+        /* Collapse all */
+        document.querySelectorAll('.faq-question').forEach(function (b) {
+          b.setAttribute('aria-expanded', 'false');
+        });
+        document.querySelectorAll('.faq-answer').forEach(function (a) {
+          a.classList.remove('is-open');
+        });
+
+        /* If it wasn't open, open it */
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          answer.classList.add('is-open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

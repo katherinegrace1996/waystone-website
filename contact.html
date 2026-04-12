@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Waystone Clinical Psychology — make an enquiry or appointment with Katy Faure, clinical psychologist.">
+  <title>Contact — Waystone Clinical Psychology</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="site-header-placeholder"></div>
+
+  <main>
+
+    <!-- ── Page Header ── -->
+    <section class="page-header">
+      <div class="container">
+        <p class="page-header__label">Get in touch</p>
+        <h1>Contact</h1>
+      </div>
+    </section>
+
+    <!-- ── Contact Body ── -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Enquiry Form -->
+          <div>
+            <p class="section__label">Reaching out</p>
+            <h2 style="margin-bottom:0.5rem;">Make an Enquiry</h2>
+            <div class="divider"></div>
+
+            <p style="font-size:0.93rem;color:var(--cream-dim);margin-bottom:2rem;">Katy sees clients Tuesday to Friday, 9am to 5pm, and uses Mondays for administrative tasks. Enquiries received during these hours will be responded to within one to two business days.</p>
+
+            <!--
+              FORM ACTION: Replace with Formspree endpoint for katy@waystoneclinicalpsychology.com.au
+              e.g. action="https://formspree.io/f/YOUR_FORM_ID"
+            -->
+            <form
+              action="https://formspree.io/f/mnjlaqol"
+              method="POST"
+              novalidate
+              id="enquiry-form"
+            >
+              <div class="form-group">
+                <label for="name">Full Name <span style="color:var(--ochre)">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:var(--ochre)">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="enquiry">Enquiry <span style="color:var(--ochre)">*</span></label>
+                <textarea
+                  id="enquiry"
+                  name="enquiry"
+                  placeholder="Please share any questions you have and what kind of support you are looking for."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Honeypot for spam prevention -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_subject" value="New enquiry — Waystone Clinical Psychology">
+              <input type="hidden" name="_replyto" value="{{email}}">
+
+              <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;padding:1rem;">Send Enquiry</button>
+
+              <p style="font-size:0.78rem;color:var(--stone-light);margin-top:1rem;text-align:center;">Your information is handled in accordance with our <a href="privacy.html" style="color:var(--stone-light);text-decoration:underline;text-underline-offset:3px;">Privacy Policy</a>.</p>
+
+            </form>
+          </div>
+
+          <!-- Sidebar: Crisis Resources -->
+          <div>
+            <div class="crisis-box">
+              <h3>Crisis Support</h3>
+              <p style="font-size:0.85rem;color:var(--cream-dim);margin-bottom:1.25rem;">Please note that Waystone Clinical Psychology is not a crisis service. If you require urgent support, please call <strong>000</strong> or reach out to one of the services below:</p>
+              <ul class="crisis-list">
+                <li>
+                  <span class="service-name">Lifeline</span>
+                  <span class="service-number"><a href="tel:131114" style="color:inherit;">13 11 14</a></span>
+                </li>
+                <li>
+                  <span class="service-name">Beyond Blue</span>
+                  <span class="service-number"><a href="tel:1300224636" style="color:inherit;">1300 22 4636</a></span>
+                </li>
+                <li>
+                  <span class="service-name">Suicide Call Back Service</span>
+                  <span class="service-number"><a href="tel:1300659467" style="color:inherit;">1300 659 467</a></span>
+                </li>
+                <li>
+                  <span class="service-name">1800RESPECT</span>
+                  <span class="service-number"><a href="tel:1800737732" style="color:inherit;">1800 737 732</a></span>
+                </li>
+                <li>
+                  <span class="service-name">MensLine Australia</span>
+                  <span class="service-number"><a href="tel:1300789978" style="color:inherit;">1300 78 99 78</a></span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact details -->
+            <div style="margin-top:2rem;padding:1.5rem 1.75rem;background:rgba(0,0,0,0.12);border-radius:6px;border:1px solid rgba(139,115,85,0.25);">
+              <p class="footer-heading">Direct Contact</p>
+              <p style="font-size:0.9rem;margin-bottom:0.5rem;">
+                <a href="mailto:katy@waystoneclinicalpsychology.com.au" style="color:var(--ochre);word-break:break-word;">katy@waystoneclinicalpsychology.com.au</a>
+              </p>
+              <p style="font-size:0.82rem;color:var(--stone-light);margin:0;">Tuesday – Friday, 9am – 5pm</p>
+            </div>
+
+            <!-- Address -->
+            <div style="margin-top:1rem;padding:1.5rem 1.75rem;background:rgba(0,0,0,0.12);border-radius:6px;border:1px solid rgba(139,115,85,0.25);">
+              <p class="footer-heading">Address</p>
+              <address style="font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.7;">
+                Suite 202, 165-167 Phillip Street<br>
+                Sydney NSW 2000<br>
+                <em style="color:var(--stone-light);font-size:0.82rem;">Telehealth only — not a physical clinic</em>
+              </address>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-placeholder"></div>
+
+  <script src="nav.js"></script>
+  <script>
+    /* Simple client-side form validation feedback */
+    const form = document.getElementById('enquiry-form');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        const inputs = form.querySelectorAll('[required]');
+        let valid = true;
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            input.style.borderColor = 'var(--ochre)';
+            valid = false;
+          } else {
+            input.style.borderColor = '';
+          }
+        });
+        if (!valid) {
+          e.preventDefault();
+          const first = form.querySelector('[required]:invalid, [required][style*="var(--ochre)"]');
+          if (first) first.focus();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
