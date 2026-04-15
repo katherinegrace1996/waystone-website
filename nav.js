@@ -21,11 +21,11 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo" aria-label="Waystone Clinical Psychology — Home">
-      <img src="logo.png" alt="" class="logo__img" aria-hidden="true">
-      <span class="logo__text">
+      <span class="logo__top">
         <span class="logo__wordmark">Waystone</span>
-        <span class="logo__sub">Clinical Psychology</span>
+        <img src="waystone-logo.png" alt="" class="logo__img" aria-hidden="true">
       </span>
+      <span class="logo__sub">Clinical Psychology</span>
     </a>
     <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -42,11 +42,11 @@
   <div class="footer-inner">
     <div class="footer-logo">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="" class="logo__img" aria-hidden="true">
-        <span class="logo__text">
+        <span class="logo__top">
           <span class="logo__wordmark">Waystone</span>
-          <span class="logo__sub">Clinical Psychology</span>
+          <img src="waystone-logo.png" alt="" class="logo__img" aria-hidden="true">
         </span>
+        <span class="logo__sub">Clinical Psychology</span>
       </a>
       <p>Telehealth only practice<br>Suite 202, 165-167 Phillip Street<br>Sydney NSW 2000</p>
     </div>
