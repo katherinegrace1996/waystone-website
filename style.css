@@ -413,12 +413,11 @@ main {
 }
 
 .definition-block--sub p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.9rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
   font-weight: 400;
-  letter-spacing: 0.02em;
+  line-height: 1.85;
   color: var(--stone-light);
-  line-height: 1.75;
 }
 
 @media (max-width: 600px) {
