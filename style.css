@@ -403,6 +403,24 @@ main {
   color: var(--cream-dim);
 }
 
+.definition-block + .definition-block {
+  margin-top: 1.5rem;
+}
+
+.definition-block--sub {
+  border-left-color: var(--stone);
+  background-color: rgba(0,0,0,0.08);
+}
+
+.definition-block--sub p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--stone-light);
+  line-height: 1.75;
+}
+
 @media (max-width: 600px) {
   .definition-block {
     padding: 1.75rem 1.5rem;
